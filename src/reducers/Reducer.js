@@ -41,8 +41,7 @@ const Reducer = (state=initialState,action)=>{
                         {newState.people=newState.people-1;}
                 }
                 if(newState.people>(4*parseInt(newState.rooms))){
-                    var extraPeople=newState.people-4*parseInt(newState.rooms)
-                    newState.rooms=newState.rooms-extraPeople
+                    newState.people=4*parseInt(newState.rooms)
                 }
             }
             break;
