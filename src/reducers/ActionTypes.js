@@ -1,0 +1,6 @@
+export const ADD_ROOMS="ADD_ROOMS";
+export const REMOVE_ROOMS="REMOVE_ROOMS";
+export const ADD_PEOPLE="ADD_PEOPLE";
+export const REMOVE_PEOPLE="REMOVE_PEOPLE";
+export const ADD_CHILDREN="ADD_CHILDREN";
+export const REMOVE_CHILDREN="REMOVE_CHILDREN";
