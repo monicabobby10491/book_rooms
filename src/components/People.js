@@ -5,6 +5,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Add from 'react-icons/lib/fa/plus-circle';
 import Minus from 'react-icons/lib/fa/minus-circle';
+import Person from 'react-icons/lib/fa/user';
 
 class People extends Component{
     constructor(props) {
@@ -24,7 +25,7 @@ class People extends Component{
     render(){
         return(
             <div style={this.style}>
-                <h4> People </h4>
+                <h4> <Person color='blue'/> People </h4>
                 <span><Add color='red' onClick={this.addPerson}/></span>
                 <span>{this.props.person}</span>
                 <span><Minus color='red' onClick={this.removePerson}/></span>

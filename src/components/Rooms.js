@@ -5,6 +5,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import Add from 'react-icons/lib/fa/plus-circle';
 import Minus from 'react-icons/lib/fa/minus-circle';
+import Bed from 'react-icons/lib/fa/bed';
 
 class Rooms extends Component{
     constructor(props) {
@@ -23,8 +24,8 @@ class Rooms extends Component{
     }
     render(){
         return(
-            <div className="options">
-                <h4> Rooms </h4>
+            <div className="options">                
+                <h4> <Bed color='blue'/> Rooms </h4>
                 <span> <Add color='red' onClick={this.addRoom}/> </span>
                 <span>{this.props.rooms}</span>
                 <span> <Minus color='red' onClick={this.removeRooms}/></span>
